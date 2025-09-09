@@ -2,7 +2,11 @@ import pygame
 import time
 import random
 
-snake_speed = 15
+# startuo shit
+logo = pygame.image.load('garf.jpeg')
+BG_COLOR = (201, 8, 182)
+
+
 # window size
 window_y = 1280
 window_x = 720
@@ -14,20 +18,25 @@ red = pygame.Color(255, 0, 0)
 green = pygame.Color(0, 255, 0)
 blue = pygame.Color(0, 0, 255)
 
+
+
+
 #setup 
 pygame.init()
 screen = pygame.display.set_mode((window_y, window_x))
-pygame.display.set_caption('garfsnek')
+pygame.display.set_caption('garfbounce')
 clock = pygame.time.Clock()
 running = True
-def jls_extract_def():
-    PYGAME_DETECT_AVX2=1    
-    return PYGAME_DETECT_AVX2
-    
+
+#background
+screen.fill(BG_COLOR)
+pygame.display.flip()
 # FPS (frames per second) controller
 fps = pygame.time.Clock()
 
-PYGAME_DETECT_AVX2 = jls_extract_def()
+while exit == False:
+    screen.fill(BG_COLOR)
+
 while running:
     #poll for events
     #quit on X
