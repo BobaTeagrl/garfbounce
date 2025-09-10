@@ -5,7 +5,7 @@ import sys
 
 # startuo shit
 pygame.init()
-garf = pygame.image.load('garf.jpeg')
+garf = pygame.image.load('assets/garf.jpeg')
 logo = pygame.transform.scale(garf, (100, 50))
 
 speed = [2,2]
@@ -18,12 +18,12 @@ window_height = 720
 BG_COLOR = (201, 8, 182)
 
 #garf setup
-garf = pygame.image.load("garf.jpeg")
+garf = pygame.image.load("assets/garf.jpeg")
 garf = pygame.transform.scale(garf, (100,50))
 garf_rect = garf.get_rect(center=(window_width//2, window_height//2))
 
 #lasagna setup
-lasagna_img = pygame.image.load("lasagna.jpeg")
+lasagna_img = pygame.image.load("assets/lasagna.jpeg")
 lasagna_img = pygame.transform.scale(lasagna_img,(40, 30))
 
 def random_lasagna():
